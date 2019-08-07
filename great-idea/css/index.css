@@ -80,10 +80,6 @@ h1 {
 	line-height: 60px;
 }
 
-h3 {
-	font-size: 26px;
-}
-
 header {
 	/* background: red; */
 	height: 85px;
@@ -91,6 +87,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 10px 0px 0px 0px;
 }
 
 header nav {
@@ -152,6 +149,7 @@ header nav a {
 	align-items: center;
 	align-self: center;
 	font-size: 18px;
+	padding: 0px 0px 0px 0px;
 }
 
 #pictureBox2 {
@@ -244,4 +242,110 @@ footer {
 	font-size: 14px;
 }
 
-/* Services.html-specific styples below... */
+/* Services.html-specific styples below. (Should probably have given own file, though!) */
+
+h3 {
+	font-size: 26px;
+}
+
+.box.preamble {
+	/* background: red; */
+	padding: 32px 0px 83px 0px;
+	height: 202px;
+}
+
+.box.preamble p {
+	line-height: 20px;
+}
+
+.box.tiles {
+	/* background: purple; */
+	
+	display: flex;
+	flex-direction: column;
+	height: 881px;
+}
+
+.box.tiles.pair {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.box.tiles.pair.tile {
+	/* display: flex; */ /*Hmm... inherits 'display: flex' from parent?? */
+	flex-direction: column;
+	border: 1px solid black;
+	margin: 10px 0px 0px 0px;
+	height: 252px;
+	width: 420px;
+	justify-content: flex-start;
+	padding: 21px 22px 0px 19px;
+	background: lightgrey;
+}
+
+.box.tiles.pair.tile h2 {
+	padding: 0px 0px 0px 0px;
+}
+
+.box.tiles.pair.tile p {
+	line-height: 21px;
+	padding: 0px 0px 20px 0px;
+}
+
+.button {
+	/* background: green; */
+	width: 142px;
+	height: 35px;
+	padding: 9px 0px 0px 40px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.button a {
+	text-decoration: none;
+	color: black;
+	font-size: 13px;
+}
+
+.box.end {
+	/* background: red; */
+	display: flex;
+	flex-direction: row;
+	height: 360px;
+	padding: 30px 0px;
+	align-items: center;
+}
+
+.box.end.left {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 30px 50px 0px 0px;
+}
+
+.box.end.left h2 {
+	padding: 0px 0px 10px 0px;
+}
+
+.box.end.left p {
+	padding: 0px 0px 25px 0px;
+}
+
+ul {
+	list-style-type: square;
+	list-style-position: inside;
+	line-height: 30px;
+}
+
+footer {
+	/* background: purple; */
+	height: 140px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* I have to say... all of the padding above feels like a right cop-out! I need to continue practicing flexbox methinks... */
+
