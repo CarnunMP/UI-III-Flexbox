@@ -64,3 +64,288 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container {
+	width: 880px;
+	margin: 0 auto;
+	/* background: pink; */
+
+	display: flex;
+
+	flex-direction: column;
+}
+
+h1 {
+	font-size: 72px;
+	letter-spacing: 5px;
+	line-height: 60px;
+}
+
+header {
+	/* background: red; */
+	height: 85px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0px 0px 0px;
+}
+
+header nav {
+	/* background: purple; */
+	width: 600px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav a {
+	text-decoration: none;
+	color: lightgrey;
+}
+
+/* header #pictureBox1 {
+	background: purple;
+} */
+
+.box.banner {
+	/* background: red; */
+	height: 494px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.box.banner.jumbo {
+	/* background: purple; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+
+	width: 480px;
+}
+
+.box.banner.jumbo.jumboText {
+	/* background: green; */
+	/* width: 485px; */
+	height: 230px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.box.banner.jumbo.button {
+	/* background: yellow; */
+	height:40px;
+	width: 180px;
+	border: 1px solid black;
+
+	/* align-self: center; */
+	/* justify-self: center; */
+	align-items: center;
+	align-self: center;
+	font-size: 18px;
+	padding: 0px 0px 0px 0px;
+}
+
+#pictureBox2 {
+	/* background: purple; */
+	height: 400px;
+}
+
+hr {
+	color: black;
+
+	/* Have to add to get <hr> to show! Apparently flexbox 'corrupts' <hr> tags: https://stackoverflow.com/questions/34365271/hr-inside-container-with-display-flex-become-corrupted. */
+	margin-left: 0;
+ 	margin-right: 0;
+}
+
+.box.content {
+	/* background: red; */
+	height: 568px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.box.content.top {
+	/* background: green; */
+	height: 450px;
+
+	display: flex;
+	flex-direction: row;
+	/* flex-basis: 0px; */
+	align-items: center;
+}
+
+.box.content.top section {
+	padding: 16px 10px 22px 2px;
+	/* justify-self: center; */
+}
+
+.box.content.bottom {
+	/* background: green; */
+	/* height: 300px; */
+
+	display: flex;
+	flex-direction: row;	
+	align-items: center;
+	flex-grow: 1;
+}
+
+.box.content.bottom section {
+	padding: 25px 12px 28px 2px;
+}
+
+p {
+	line-height: 18px;
+	font-size: 16px;
+}
+
+footer {
+	/* background: red; */
+	height: 250px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.box.contact {
+	padding: 28px 0px 0px 3px;
+}
+
+/* Overwrite above padding: */
+#streetAddress {
+	padding: 0px 0px 20px 0px;
+}
+
+#number {
+	padding: 0px;
+}
+
+#emailAddress {
+	padding: 18px 0px 0px 0px;
+}
+
+#copyright {
+	align-self: center;
+	padding: 52px 0px 0px 0px;
+}
+
+#copyright p {
+	font-size: 14px;
+}
+
+/* Services.html-specific styples below. (Should probably have given own file, though!) */
+
+h3 {
+	font-size: 26px;
+}
+
+.box.preamble {
+	/* background: red; */
+	padding: 32px 0px 83px 0px;
+	height: 202px;
+}
+
+.box.preamble p {
+	line-height: 20px;
+}
+
+.box.tiles {
+	/* background: purple; */
+	
+	display: flex;
+	flex-direction: column;
+	height: 881px;
+}
+
+.box.tiles.pair {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.box.tiles.pair.tile {
+	/* display: flex; */ /*Hmm... inherits 'display: flex' from parent?? */
+	flex-direction: column;
+	border: 1px solid black;
+	margin: 10px 0px 0px 0px;
+	height: 252px;
+	width: 420px;
+	justify-content: flex-start;
+	padding: 21px 22px 0px 19px;
+	background: lightgrey;
+}
+
+.box.tiles.pair.tile h2 {
+	padding: 0px 0px 0px 0px;
+}
+
+.box.tiles.pair.tile p {
+	line-height: 21px;
+	padding: 0px 0px 20px 0px;
+}
+
+.button {
+	/* background: green; */
+	width: 142px;
+	height: 35px;
+	padding: 9px 0px 0px 40px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.button a {
+	text-decoration: none;
+	color: black;
+	font-size: 13px;
+}
+
+.box.end {
+	/* background: red; */
+	display: flex;
+	flex-direction: row;
+	height: 360px;
+	padding: 30px 0px;
+	align-items: center;
+}
+
+.box.end.left {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 30px 50px 0px 0px;
+}
+
+.box.end.left h2 {
+	padding: 0px 0px 10px 0px;
+}
+
+.box.end.left p {
+	padding: 0px 0px 25px 0px;
+}
+
+ul {
+	list-style-type: square;
+	list-style-position: inside;
+	line-height: 30px;
+}
+
+footer {
+	/* background: purple; */
+	height: 140px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* I have to say... all of the padding above feels like a right cop-out! I need to continue practicing flexbox methinks... */
+
