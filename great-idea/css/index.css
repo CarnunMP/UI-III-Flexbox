@@ -64,3 +64,111 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container {
+	width: 876px;
+	margin: 0 auto;
+	/* background: pink; */
+
+	display: flex;
+
+	flex-direction: column;
+}
+
+header {
+	/* background: red; */
+	height: 85px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav {
+	/* background: purple; */
+	width: 600px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav a {
+	text-decoration: none;
+	color: lightgrey;
+}
+
+/* header #pictureBox1 {
+	background: purple;
+} */
+
+.box.banner {
+	/* background: red; */
+	height: 494px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.box.banner.jumbo {
+	/* background: purple; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+
+	width: 480px;
+}
+
+.box.banner.jumbo.jumboText {
+	/* background: green; */
+	/* width: 485px; */
+	height: 230px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-size: 72px;
+	letter-spacing: 5px;
+	line-height: 60px;
+}
+
+.box.banner.jumbo.button {
+	/* background: yellow; */
+	height:40px;
+	width: 180px;
+	border: 1px solid black;
+
+	/* align-self: center; */
+	/* justify-self: center; */
+	align-items: center;
+	align-self: center;
+	font-size: 18px;
+}
+
+#pictureBox2 {
+	/* background: purple; */
+	height: 400px;
+}
+
+hr {
+	color: black;
+
+	/* Have to add to get <hr> to show! Apparently flexbox 'corrupts' <hr> tags: https://stackoverflow.com/questions/34365271/hr-inside-container-with-display-flex-become-corrupted. */
+	margin-left: 0;
+ 	margin-right: 0;
+}
+
+.box.content {
+	display: flex;
+	flex-direction: column;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+}
