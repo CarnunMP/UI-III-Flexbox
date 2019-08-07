@@ -164,11 +164,78 @@ hr {
 }
 
 .box.content {
+	/* background: red; */
+	height: 568px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.box.content.top {
+	/* background: green; */
+	height: 450px;
+
+	display: flex;
+	flex-direction: row;
+	/* flex-basis: 0px; */
+	align-items: center;
+}
+
+.box.content.top section {
+	padding: 16px 10px 22px 2px;
+	/* justify-self: center; */
+}
+
+.box.content.bottom {
+	/* background: green; */
+	/* height: 300px; */
+
+	display: flex;
+	flex-direction: row;	
+	align-items: center;
+	flex-grow: 1;
+}
+
+.box.content.bottom section {
+	padding: 25px 12px 28px 2px;
+}
+
+p {
+	line-height: 18px;
+	font-size: 16px;
+}
+
+footer {
+	/* background: red; */
+	height: 250px;
+
 	display: flex;
 	flex-direction: column;
 }
 
-footer {
-	display: flex;
-	flex-direction: column;
+.box.contact {
+	padding: 28px 0px 0px 3px;
+}
+
+/* Overwrite above padding: */
+#streetAddress {
+	padding: 0px 0px 20px 0px;
+}
+
+#number {
+	padding: 0px;
+}
+
+#emailAddress {
+	padding: 18px 0px 0px 0px;
+}
+
+#copyright {
+	align-self: center;
+	padding: 52px 0px 0px 0px;
+}
+
+#copyright p {
+	font-size: 14px;
 }
