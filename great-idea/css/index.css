@@ -65,13 +65,23 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .container {
-	width: 876px;
+	width: 880px;
 	margin: 0 auto;
 	/* background: pink; */
 
 	display: flex;
 
 	flex-direction: column;
+}
+
+h1 {
+	font-size: 72px;
+	letter-spacing: 5px;
+	line-height: 60px;
+}
+
+h3 {
+	font-size: 26px;
 }
 
 header {
@@ -129,12 +139,6 @@ header nav a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-
-h1 {
-	font-size: 72px;
-	letter-spacing: 5px;
-	line-height: 60px;
 }
 
 .box.banner.jumbo.button {
@@ -239,3 +243,5 @@ footer {
 #copyright p {
 	font-size: 14px;
 }
+
+/* Services.html-specific styples below... */
